@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     height: 100vh; 
+    box-shadow: #f4f4f4;
+}
+
+.btn {
+    background-color: #ff416c; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #e03e5d;
+}
+
+.form-container {
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    text-align: left;
+    color: #333;
+    font-size: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="email"],
+input[type="text"],
+textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+}
+
+input:focus, textarea:focus {
+    border-color: #ff416c;
+    outline: none;
+}
+
+.name-fields {
+    display: flex;
+    gap: 10px;
+}
+
+.name-field {
+    flex: 1;
+}
+
+.checkbox-field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.checkbox-field input {
+    margin-right: 10px;
+}
+
+button[type="submit"] {
+    align-self: center;
+    width: 100%;
+    background-color: #ff416c;
+}
+
+button[type="submit"]:hover {
+    background-color: #e03e5d;
+}
+
+.submit-btn {
+    padding: 12px 20px;
+    font-size: 18px;
+}

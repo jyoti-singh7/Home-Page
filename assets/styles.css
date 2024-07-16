@@ -1,0 +1,374 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+section {
+    padding: 20px;
+    margin: 0px;
+}
+
+#hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:280px;
+    padding-right:300px;
+    padding-top: 120px;
+    padding-bottom: 130px;
+}
+
+.hero-content {
+    max-width: 50%;
+    /* changes */
+    flex:1;
+    padding:20px;
+}
+.text{
+    font-size: medium;
+    color:red;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+     width:320px;
+    height:400px; 
+   
+}
+
+button {
+    background-color:rgb(241, 49, 49);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #cc0052;
+    
+}
+/* styles for what we do section */
+
+.what-we-do-section {
+    margin: 50px auto;
+    padding-left:300px;
+}
+
+.section-title {
+    color: red;
+    
+}
+.heading {
+    display: flex;
+    flex-direction: row; 
+    padding-right:20px;
+    gap:100px;
+   
+
+}
+
+.what-we-do-section.heading p {
+    margin-right: 20px; 
+    flex: 1; 
+    text-align: right; 
+}
+what-we-do-section.heading.services-description{
+  font-size: 2px;
+}
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px; 
+    margin: 20px auto;
+}
+
+.image-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap:30px;
+}
+
+.image-wrapper {
+    position: relative;
+}
+
+.service-image {
+    width:300px;
+    height: 400px;
+    object-fit: cover;
+    border: 2px solid transparent;
+    transition: transform 0.3s ease;
+}
+
+.service-image:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.read-more {
+    display: none;
+    position: absolute; 
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color:white;
+    color: red;
+     padding: 10px 20px; 
+    text-decoration: none;
+}
+
+.image-wrapper:hover .read-more {
+    display: block;
+}
+
+.dots-container {
+    margin-top: 20px;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: red;
+}
+
+
+/* Styles for the why choose us section */
+.why-choose-us-section {
+    margin: 50px 0;
+    text-align: center;
+    padding-top: 100px;
+    padding-left: 220px;
+    padding-right: 200px;
+}
+
+.why-choose-us-section .section-title {
+    color: red;
+    
+}
+
+.why-choose-us-section h2 {
+    margin: 20px 0;
+}
+
+
+
+.benefits-container {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap; 
+    gap:20px;
+}
+
+.benefit {
+    width:200px;
+    height:150px;
+    margin: 10px 0;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+}
+
+.benefit-logo {
+    width: 50px; 
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.benefit h4 {
+    margin: 10px 0;
+}
+
+.benefit p {
+    margin: 0;
+    text-align: left;
+    padding-left: 10px;
+}
+ .benefit-logo{
+    height:50px;
+    width:50px; 
+}
+
+/* Styles for the project section */
+.project-section {
+    margin: 50px 0;
+    text-align: center;
+    padding-left: 200px;
+}
+
+.project-section .section-title {
+    color: red;
+    text-align: center;
+    padding-right: 200px;
+}
+
+.project-section h2 {
+    margin: 20px 0;
+    text-align: center;
+    padding-right: 190px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap:100px;
+}
+
+.paragraphs {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.paragraph {
+     margin: 20px 0; 
+    padding: 10px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    background-color:rgb(248, 243, 243);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    width:300px;
+    height:130px;
+}
+
+.paragraph h3 {
+    margin-bottom: 10px;
+}
+
+.paragraph p{
+  text-align: left;
+  padding-left: 20px;
+  font-size: small;
+}
+.paragraph.active {
+    background-color: rgb(255, 45, 45);
+   
+}
+
+.image-container {
+    width: 50%;
+}
+
+.project-image {
+    width: 640px;
+    height: 520px;
+    transition: opacity 0.3s ease;
+}
+
+/* Styles for the experts growth section */
+.experts-growth-section {
+    margin: 50px 0;
+    text-align: center;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-top: 150px;
+}
+
+.experts-growth-section .section-title {
+    color: red;
+}
+
+.experts-growth-section .para {
+    margin: 20px 0;
+    font-size: 35px;
+}
+
+.growth-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; 
+}
+
+.growth {
+    width:150px;
+    height:130px;
+    margin: 10px 0;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.growth:hover {
+    transform: scale(1.1); 
+}
+
+.growth-logo {
+    width: 30px; 
+    height: auto;
+    margin-bottom: 10px;
+}
+.growth-logoo{
+    width:70px;
+    height:45px;
+}
+
+.growth h4 {
+    margin: 10px 0;
+}
+
+.growth p {
+    margin: 0;
+}
+
+/* Styles for the client's feedback section */
+.client-feedback-section {
+    margin: 50px 0;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.client-feedback-section .section-title {
+    color: red;
+    
+}
+
+.client-feedback-section h2 {
+    margin: 20px 0;
+}
+
+.feedback-container {
+    margin: 20px 0;
+}
+
+.feedback-text {
+    margin: 10px 0;
+    font-style: italic; 
+    color: #333; 
+}
+.disc{
+    padding:10px;
+    color:red;
+}
+span{
+    color:black;
+    opacity: 40%;
+}
+
+.final img{
+    height:250px;
+    width:1500px;
+}
+
